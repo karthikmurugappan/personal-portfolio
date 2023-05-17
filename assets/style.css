@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: orangered;
+    background-image: linear-gradient(to bottom right, orangered, yellow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding: 3px;
+    flex-wrap: wrap;
+
+}
+
+#my-pic {
+    height: 200px;
+    width: auto;
+    border-radius: 30%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-buttons {
+    font-size: 20px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    background-color: #fa7070;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-buttons:hover {
+    background-color: white;
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 200px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about-me-title {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 4px 5px #fa7070;
+}
+
+#about-me-desc {
+    text-align: left;
+}
+
+#work-title {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #fa7070;
+}
+
+#work-desc {
+    text-align: left;
+}
+.cards {
+    display: flex;
+}
+
+#work-one {
+    height: 200px;
+    border-radius: 30%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.work-img {
+    height: 150px;
+    border-radius: 30%;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#contact-me-title {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #fa7070;
+}
+
+#contact-me-desc {
+    text-align: left;
+}
+
+.contact-me-buttons {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
